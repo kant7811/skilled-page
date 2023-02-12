@@ -1,0 +1,288 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+html, body{
+    max-height: 100%;
+}  
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+body{
+  background-color:  hsl(0, 0%, 95%);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-size: cover;
+}
+
+.top__header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.btn__one{
+   color: hsl(0, 0%, 100%);
+   background-color: hsl(233, 54%, 16%);
+   padding: 0.625rem 1.35rem;
+   margin: 4px 2px;
+   text-align: center;
+   border-radius: 1.35rem;
+   cursor: pointer;
+}
+
+.btn__one:hover{
+  background-color: hsl(234, 25%, 52%);
+}
+
+.intro{
+  padding:  1rem;
+}
+
+.intro__header{
+  color: hsl(233, 54%, 16%);
+  font-size: 2.5rem;
+  font-weight: bolder;
+  line-height: 1.2;
+}
+
+.intro__info{
+  color: hsl(232, 10%, 56%);
+  font-weight: bold;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.btn__two{
+  color: hsl(0, 0%, 100%);
+  background-image: linear-gradient(hsl(322, 87%, 55%), hsl(13, 100%, 64%));
+  padding: 0.625rem 1.35rem;
+  margin: 4px 2px;
+  text-align: center;
+  border-radius: 1.35rem;
+  cursor: pointer;
+  display: inline-flex;
+  
+}
+
+.btn__two:hover{
+  background-image: linear-gradient(hsla(322, 87%, 55%, 0.5), hsla(13, 100%, 64%, 0.5));
+}
+
+.card__container{
+  display: grid;
+  padding: 2rem 1rem;
+}
+
+.card__one{
+  background-image: linear-gradient(hsl(322, 87%, 55%), hsl(13, 100%, 64%));
+  font-weight: bolder;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  line-height: 1.2;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.card__one__header{
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card__two,
+.card__three,
+.card__four,
+.card__five,
+.card__six{
+  color: hsl(233, 54%, 16%);
+  margin-top: 2.5rem;
+  border-radius: 0.5rem;
+  background-color: hsl(0, 0%, 100%);
+  
+}
+.card__two__h,
+.card__three__h,
+.card__four__h,
+.card__five__h,
+.card__six__h{
+  font-weight: bolder;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.card__two__i,
+.card__three__i,
+.card__four__i,
+.card__five__i,
+.card__six__i{
+  font-weight: bold;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  color: hsl(232, 10%, 56%);
+  font-weight: bold;
+}
+
+.card__two__m,
+.card__three__m,
+.card__four__m,
+.card__five__m,
+.card__six__m{
+  color: hsl(322, 87%, 55%);
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+  cursor: pointer;
+}
+
+.card__two__icon,
+.card__three__icon,
+.card__four__icon,
+.card__five__icon,
+.card__six__icon{
+  position: relative;
+  top: -28px;
+  left:18px;
+}
+
+.card__two__m:hover{
+  color: hsl(341, 100%, 83%);
+}
+.card__three__m:hover{
+  color: hsl(341, 100%, 83%);
+}
+.card__four__m:hover{
+  color: hsl(341, 100%, 83%);
+}
+.card__five__m:hover{
+  color: hsl(341, 100%, 83%);
+}
+.card__six__m:hover{
+  color: hsl(341, 100%, 83%);
+}
+
+.kraj{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: hsl(245, 25%, 52%);
+}
+.kraj__b{
+  color: hsl(0, 0%, 100%);
+  background-image: linear-gradient(hsl(237, 100%, 64%), hsl(322, 87%, 55%));
+  padding: 0.625rem 1.35rem;
+  margin: 4px 2px;
+  text-align: center;
+  border-radius: 1.35rem;
+  cursor: pointer;
+}
+.kraj__b:hover{
+  background-image: linear-gradient(hsla(237, 100%, 64%, 0.5), hsla(322, 87%, 55%, 0.5));
+}
+
+@media(min-width: 768px){
+  .hero__image{
+    position: absolute;
+    top: -100px;
+    right: -300px;
+  }
+  .intro{
+    padding-right: 23rem;
+    padding-top: 7rem;
+  }
+  .container__one{
+    padding: 0rem 1rem;
+  }
+  .card__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 8rem 2rem 4rem 2rem;
+  }
+  .card__one__header{
+    padding-top: 6rem;
+  }
+  .kraj{
+    padding: 0rem 2rem;
+  }
+}
+
+@media(min-width: 1280px){
+  .top__header{
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  .intro{
+    padding-left: 6rem;
+    padding-top: 15rem;
+    padding-right: 57rem;
+    padding-bottom: 15rem;
+  }
+  .card__container{
+    padding: 0rem 6rem 0rem 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 5rem;
+  }
+}
+
+
+
+
+
